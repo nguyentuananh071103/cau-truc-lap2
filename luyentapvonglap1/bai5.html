@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let N = +prompt("Nhập vào số lượng: ")
+    let a = 1;
+    let b = 1;
+    let c = a + b;
+    let count = 2;
+    let sum = c;
+    document.write(a + ',' + b)
+    while (count < N) {
+        c = a + b;
+        a = b;
+        b = c;
+        sum += c;
+        document.write(',' + c);
+        count++;
+    }
+    document.write("<br> Tổng các số trong dãy Fibonacci là: " + sum)
+</script>
+</body>
+</html>

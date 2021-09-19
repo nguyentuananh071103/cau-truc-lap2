@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let N = +prompt('nhập số lượng chia hết cho 7');
+  let sum = 0;
+  let count = 0;
+  let startNumber = 1;
+  while (count<N) {
+
+    if (startNumber%7==0){
+      sum+=startNumber;
+      count++;
+    }
+    startNumber++;
+  }
+  document.write('tổng của ' + count + " số chia hết cho 7 là :"+sum);
+</script>
+</body>
+</html>
